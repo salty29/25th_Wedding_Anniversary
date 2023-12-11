@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure that the content takes at least the full height of the viewport */
+}
+
+header {
+    background-color: #76D7C4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+nav {
+    background-color: #76D7C4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu button {
+    background-color: #76D7C4; /* Matching the header color */
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and take remaining vertical space */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Negative margin to counteract padding in columns */
+}
+
+.column {
+    flex: 0 0 33.33%; /* 3 columns in a row */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+    border-radius: 40px; /* Add rounded corners */
+}
+
+.label {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+footer {
+    background-color: #76D7C4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
